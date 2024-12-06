@@ -1,1 +1,1 @@
-Quick install: chezmoi init --apply samstevens127
+Quick install: `$ chezmoi init --apply samstevens127`
