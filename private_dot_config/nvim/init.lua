@@ -12,10 +12,13 @@ vim.call('plug#begin')
 
 
 Plug('lervag/vimtex')
-
+Plug('catppuccin/nvim', { ['as']= 'catppuccin' })
 
 vim.call('plug#end')
 
 -- vimtex settings
 vim.g.vimtex_view_general_viewer = 'mupdf'
 vim.g.vimtex_view_method = "mupdf"
+
+-- colorcheme settings
+vim.cmd.colorscheme "catppuccin-frappe"
