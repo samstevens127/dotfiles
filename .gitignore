@@ -1,0 +1,6 @@
+#ignore object files
+*.o 
+#ignore executables
+./dwm-6.5/dwm
+./slock-1.5/slock
+./st-0.9.2/st
