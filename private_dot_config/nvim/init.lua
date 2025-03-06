@@ -9,10 +9,17 @@ local vim = vim
 local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
+-- autoclose brackets
+Plug 'm4xshen/autoclose.nvim'
 
+-- latex in nvim
+Plug('lervag/vimtex')	
 
-Plug('lervag/vimtex')
+-- colour theme
 Plug('catppuccin/nvim', { ['as']= 'catppuccin' })
+
+-- R in nvim
+Plug('jalvesaq/Nvim-R')
 
 vim.call('plug#end')
 
@@ -22,3 +29,6 @@ vim.g.vimtex_view_method = "mupdf"
 
 -- colorcheme settings
 vim.cmd.colorscheme "catppuccin-frappe"
+
+-- autoclose setup
+require("autoclose").setup()
