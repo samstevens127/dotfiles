@@ -21,6 +21,10 @@ Plug('catppuccin/nvim', { ['as']= 'catppuccin' })
 -- R in nvim
 Plug('jalvesaq/Nvim-R')
 
+-- Treesitter
+
+Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
+
 vim.call('plug#end')
 
 -- vimtex settings
@@ -32,3 +36,4 @@ vim.cmd.colorscheme "catppuccin-frappe"
 
 -- autoclose setup
 require("autoclose").setup()
+require('nvim-treesitter.configs').setup({highlight={enable=true}, ensure_installed = {"c", "cpp", "python"}})
