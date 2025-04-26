@@ -16,7 +16,8 @@ Plug 'm4xshen/autoclose.nvim'
 Plug('lervag/vimtex')	
 
 -- colour theme
-Plug('catppuccin/nvim', { ['as']= 'catppuccin' })
+Plug('RRethy/base16-nvim')
+--Plug('catppuccin/nvim', { ['as']= 'catppuccin' })
 
 -- R in nvim
 Plug('jalvesaq/Nvim-R')
@@ -32,7 +33,7 @@ vim.g.vimtex_view_general_viewer = 'mupdf'
 vim.g.vimtex_view_method = "mupdf"
 
 -- colorcheme settings
-vim.cmd.colorscheme "catppuccin-frappe"
+vim.cmd.colorscheme "base16-3024"
 
 -- autoclose setup
 require("autoclose").setup()
