@@ -33,7 +33,7 @@ vim.g.vimtex_view_general_viewer = 'mupdf'
 vim.g.vimtex_view_method = "mupdf"
 
 -- colorcheme settings
-vim.cmd.colorscheme "base16-chalk"
+vim.cmd.colorscheme "base16-dracula" -- base16-cupertino for light theme
 
 -- autoclose setup
 require("autoclose").setup()
