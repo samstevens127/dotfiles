@@ -4,6 +4,24 @@ vim.wo.relativenumber = true
 vim.wo.number = true
 vim.opt.clipboard:append('unnamedplus')
 
+-- make sure vimmplug installed
+local fn = vim.fn
+
+-- Define the path where vim-plug should be installed
+local plug_path = fn.stdpath("data") .. "/site/autoload/plug.vim"
+
+-- Check if vim-plug is installed, then install if not there
+if fn.empty(fn.glob(plug_path)) > 0 then
+  print("Installing vim-plug...")
+  fn.system({
+    "sh",
+    "-c",
+    "curl -fLo " .. plug_path ..
+    " --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+  })
+  print("vim-plug installed. Restart Neovim.")
+end
+
 -- plugins
 local vim = vim
 local Plug = vim.fn['plug#']
