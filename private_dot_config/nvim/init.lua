@@ -3,6 +3,7 @@ vim.g.maplocalleader = ","
 vim.wo.relativenumber = true
 vim.wo.number = true
 vim.opt.clipboard:append('unnamedplus')
+vim.opt.termguicolors = true
 
 -- make sure vimmplug installed
 local fn = vim.fn
