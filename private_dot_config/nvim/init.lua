@@ -60,4 +60,4 @@ vim.cmd.colorscheme "base16-isotope" -- base16-cupertino for light theme
 
 -- autoclose setup
 require("autoclose").setup()
-require('nvim-treesitter.configs').setup({highlight={enable=true}, ensure_installed = {"c", "cpp", "python"}})
+require('nvim-treesitter.config').setup({highlight={enable=true}, ensure_installed = {"c", "cpp", "python"}})
