@@ -4,6 +4,10 @@ vim.wo.relativenumber = true
 vim.wo.number = true
 vim.opt.clipboard:append('unnamedplus')
 vim.opt.termguicolors = true
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+
 
 -- make sure vimmplug installed
 local fn = vim.fn
@@ -48,11 +52,11 @@ Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
 vim.call('plug#end')
 
 -- vimtex settings
-vim.g.vimtex_view_general_viewer = 'mupdf'
-vim.g.vimtex_view_method = "mupdf"
+vim.g.vimtex_view_general_viewer = 'zathura'
+vim.g.vimtex_view_method = "zathura"
 
 -- colorcheme settings
-vim.cmd.colorscheme "base16-dracula" -- base16-cupertino for light theme
+vim.cmd.colorscheme "base16-isotope" -- base16-cupertino for light theme
 
 -- autoclose setup
 require("autoclose").setup()
