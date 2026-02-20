@@ -59,4 +59,7 @@ vim.cmd.colorscheme "cyberdream"
 
 -- autoclose setup
 require("autoclose").setup()
-require('nvim-treesitter.config').setup({highlight={enable=true}, ensure_installed = {"c", "cpp", "python", "rust"}})
+require('nvim-treesitter.config').setup(
+  {highlight={enable=true},
+  ensure_installed = {"c", "cpp", "python", "rust"}}
+)
