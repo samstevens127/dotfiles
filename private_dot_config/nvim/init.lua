@@ -39,8 +39,7 @@ Plug 'm4xshen/autoclose.nvim'
 Plug('lervag/vimtex')	
 
 -- colour theme
-Plug('RRethy/base16-nvim')
---Plug('catppuccin/nvim', { ['as']= 'catppuccin' })
+Plug('scottmckendry/cyberdream.nvim')
 
 -- R in nvim
 Plug('jalvesaq/Nvim-R')
@@ -56,8 +55,8 @@ vim.g.vimtex_view_general_viewer = 'zathura'
 vim.g.vimtex_view_method = "zathura"
 
 -- colorcheme settings
-vim.cmd.colorscheme "base16-isotope" -- base16-cupertino for light theme
+vim.cmd.colorscheme "cyberdream"
 
 -- autoclose setup
 require("autoclose").setup()
-require('nvim-treesitter.config').setup({highlight={enable=true}, ensure_installed = {"c", "cpp", "python"}})
+require('nvim-treesitter.config').setup({highlight={enable=true}, ensure_installed = {"c", "cpp", "python", "rust"}})
