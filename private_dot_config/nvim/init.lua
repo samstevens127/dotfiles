@@ -5,8 +5,8 @@ vim.wo.number = true
 vim.opt.clipboard:append('unnamedplus')
 vim.opt.termguicolors = true
 vim.opt.expandtab = true
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.tabstop = 8
+vim.opt.shiftwidth = 8
 
 
 -- make sure vimmplug installed
