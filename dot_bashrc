@@ -19,3 +19,5 @@ complete -cf doas
 # Put your fun stuff here.
 
 export EDITOR=nvim
+
+. "$HOME/.local/bin/env"
