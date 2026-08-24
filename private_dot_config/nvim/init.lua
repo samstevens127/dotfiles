@@ -40,6 +40,7 @@ Plug('lervag/vimtex')
 
 -- colour theme
 Plug('scottmckendry/cyberdream.nvim')
+Plug('projekt0n/github-nvim-theme') 
 
 -- R in nvim
 Plug('jalvesaq/Nvim-R')
@@ -55,7 +56,13 @@ vim.g.vimtex_view_general_viewer = 'zathura'
 vim.g.vimtex_view_method = "zathura"
 
 -- colorcheme settings
+--Dark Theme
+
 vim.cmd.colorscheme "cyberdream"
+
+-- light theme:
+
+--vim.cmd.colorscheme "github_light_high_contrast"
 
 -- autoclose setup
 require("autoclose").setup()
