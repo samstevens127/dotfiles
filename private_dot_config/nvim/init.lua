@@ -33,7 +33,7 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 -- autoclose brackets
-Plug 'm4xshen/autoclose.nvim'
+Plug('m4xshen/autoclose.nvim')
 
 -- latex in nvim
 Plug('lervag/vimtex')	
@@ -46,8 +46,10 @@ Plug('projekt0n/github-nvim-theme')
 Plug('jalvesaq/Nvim-R')
 
 -- Treesitter
-
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
+
+-- Markdown
+Plug('YousefHadder/markdown-plus.nvim')
 
 vim.call('plug#end')
 
@@ -62,7 +64,7 @@ vim.cmd.colorscheme "cyberdream"
 
 -- light theme:
 
---vim.cmd.colorscheme "github_light_high_contrast"
+-- vim.cmd.colorscheme "github_light_high_contrast"
 
 -- autoclose setup
 require("autoclose").setup()
@@ -70,3 +72,4 @@ require('nvim-treesitter.config').setup(
   {highlight={enable=true},
   ensure_installed = {"c", "cpp", "python", "rust"}}
 )
+require('markdown-plus').setup()
